@@ -1,0 +1,59 @@
+<form action="/api/products" method="POST" id="add_product">
+    <div class="row justify-content-md-center">
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+        <div class="login-screen">
+          <div class="login-box">
+            <div class="row gutters">
+              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                <div class="form-group m-3">
+                  <input type="hidden" name="id" value="" />
+                  <input
+                    name="name"
+                    type="text"
+                    class="form-control"
+                    placeholder="Name Product"
+                  />
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                <div class="form-group m-3">
+                  <input
+                    name="reference"
+                    type="text"
+                    class="form-control"
+                    placeholder="Reference Product"
+                  />
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                <div class="form-group m-3">
+                  <input
+                    type="number"
+                    name="stock"
+                    class="form-control"
+                    placeholder="Stock"
+                  />
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                <div class="form-group m-3">
+                  <input
+                    name="price"
+                    type="text"
+                    class="form-control"
+                    placeholder="Price Product"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="actions clearfix m-3">
+              <button type="submit" class="btn btn-primary btn-block update">
+                Save
+              </button>
+            </div>
+            <div class="or"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>

@@ -1,0 +1,54 @@
+<!--include header-->
+<%- include('include/_header') %>
+<!--include header-->
+
+<main>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="m-5">
+          <a href="/add-product" class="btn btn-primary">
+            <span>New Product<i class="m-3 fas fa-boxes"></i></span>
+          </a>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title text-uppercase mb-0">Manage Product</h5>
+          </div>
+          <div class="table-responsive">
+            <form action="/" method="POST">
+              <table class="table no-wrap user-table mb-0">
+                <thead>
+                  <tr>
+                    <th
+                      scope="col"
+                      class="border-0 text-uppercase font-medium pl-4"
+                    >
+                      #
+                    </th>
+                    <th scope="col" class="border-0 text-uppercase font-medium">
+                      Name
+                    </th>
+                    <th scope="col" class="border-0 text-uppercase font-medium">
+                      Stock
+                    </th>
+                    <th scope="col" class="border-0 text-uppercase font-medium">
+                      Price
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <%- include('include/_show') %>
+                </tbody>
+              </table>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!--include footer-->
+<%- include('include/_footer') %>
+<!--include footer-->

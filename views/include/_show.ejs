@@ -1,0 +1,27 @@
+<% for(var i=0;i < products.length; i++) { %>
+<tr>
+    <td class="pl-4"><%= i+1 %></td>
+    <td>
+      <h5 class="font-medium mb-0"><%= products[i].name %></h5>
+      <span class="text-muted"><%= products[i].reference %></span>
+    </td>
+    <td>
+      <span class="text-muted"><%= products[i].stock %></span>
+      <span class="text-muted">Und</span>
+    </td>
+    <td>
+      <span class="text-muted">$</span>
+      <span class="text-muted"><%= products[i].price %></span>
+    </td>
+    <td>
+      <a
+        class="btn btn-outline-info btn-circle btn-lg btn-circle ml-2 delete" data-id=<%= products[i]._id %>>
+        <i class="fa fa-trash"></i>
+      </a>
+      <a class="btn btn-outline-info btn-circle btn-lg btn-circle ml-2"
+          href="/update-product?id=<%= products[i]._id %>">
+        <i class="fa fa-edit"></i>
+      </a>
+    </td>
+  </tr>
+  <% } %>
